@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/themify-icons/themify-icons.css">
+    <script defer src="./assets/js/index.js"></script>
+</head>
+<body>
+    <div id="header">
+        <ul id="nav">
+            <li><a href="#">home</a></li>
+            <li><a href="#band">band</a></li>
+            <li><a href="#tour">tour</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#">more <i class="more-icon ti-angle-down"></i></a>
+                <ul class="sub-nav">
+                    <li><a href="#">merchadise</a></li>
+                    <li><a href="#">extras</a></li>
+                    <li><a href="#">media</a></li>
+                </ul>
+            </li>
+        </ul>
+
+        <div id="search-icon"><i class="ti-search text-white"></i></div>
+        <div id="menu-icon"><i class="ti-menu"></i></div>
+    </div>
+
+    <div id="slider">
+        <div class="text-content text-center text-white">
+            <h2 class="text-heading">Los Angeles</h2>
+            <span class="text-description">We had the best time playing at Venice Beach</span>
+        </div>
+    </div>
+
+    <div id="content">
+        <div class="content-section" id="band">
+            <h2 class="content-heading text-center">The Band</h2>
+            <p class="content-sub-heading text-center text-grey">We love music</p>
+            <p class="about-text">
+                This is our band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet consectetur 
+                adipisicing elit. Ut sed enim fugiat maiores deserunt provident unde velit, nam temporibus quas dolorem necessitatibus corrupti hic maxime ullam 
+                impedit sequi, quia earum? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="row members">
+                <div class="col col-third s-col-full mt-32 text-center">
+                    <p class="member-name">Name</p>
+                    <img src="./assets/img/members/member1.jpg" alt="">
+                </div>
+                <div class="col col-third s-col-full mt-32 text-center">
+                    <p class="member-name">Name</p>
+                    <img src="./assets/img/members/member1.jpg" alt="">
+                </div>
+                <div class="col col-third s-col-full mt-32 text-center">
+                    <p class="member-name">Name</p>
+                    <img src="./assets/img/members/member1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="tours" id="tour">
+            <div class="content-section">
+                <h2 class="content-heading text-center">Tour Dates</h2>
+                <p class="content-sub-heading text-center text-grey">Remember to book your tickets</p>
+           
+                <ul class="tickets-list">
+                    <li class="ticket-item text-grey">September <span class="sold-out text-white">Sold out</span></li>
+                    <li class="ticket-item text-grey">October <span class="sold-out text-white">Sold out</span></li>
+                    <li class="ticket-item text-grey">November <span class="ticket-quantity text-white">3</span></li>
+                </ul>
+
+                <div class="row places">
+                    <div class="col col-third s-col-full mt-16 place-item">
+                        <img src="./assets/img/places/newyork.jpg" alt="" class="place-img">
+                        <div class="place-body">
+                            <p class="place-heading">New York</p>
+                            <p class="place-date">Fri 27 Nov 2016</p>
+                            <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="s-width-full mb-16 black-btn js-buy-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col col-third s-col-full mt-16 place-item">
+                        <img src="./assets/img/places/paris.jpg" alt="" class="place-img">
+                        <div class="place-body">
+                            <p class="place-heading">Paris</p>
+                            <p class="place-date">Sat 28 Nov 2016</p>
+                            <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="s-width-full mb-16 black-btn js-buy-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col col-third s-col-full mt-16 place-item">
+                        <img src="./assets/img/places/sanfran.jpg" alt="" class="place-img">
+                        <div class="place-body">
+                            <p class="place-heading">San Francisco</p>
+                            <p class="place-date">Sun 29 Nov 2016</p>
+                            <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="s-width-full mb-16 black-btn js-buy-btn">Buy Tickets</button>
+                        </div>
+                    </div>
+
+                    <div class="modal js-modal">
+                        <div class="modal-container js-modal-container">
+                            <div class="modal-header">
+                                <i class="ti-close close-btn js-close-btn"></i>
+                                <h4 class="modal-heading">
+                                    <i class="ti-bag heading-icon"></i>Tickets
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="ticket-quantity">
+                                        <i class="ti-shopping-cart cart-icon"></i>Tickets, $15 per person
+                                    </label>
+                                    <input type="number" id="ticket-quantity" placeholder="How many?" >
+                                </div>
+                                <div class="form-group">
+                                    <label for="receiving-email">
+                                        <i class="ti-user user-icon"></i>Send to
+                                    </label>
+                                    <input type="email" id="receiving-email" placeholder="Enter email">
+                                </div>
+                                <button class="pay-btn">
+                                    PAY<i class="ti-check check-icon"></i>
+                                </button>
+                            </div>
+                            <div class="modal-footer">
+                                <p>
+                                    Need <a href="">help?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section" id="contact">
+            <h2 class="content-heading text-center">Contact</h2>
+            <p class="content-sub-heading text-center text-grey">Fan? Drop a note?</p>
+
+            <div class="contact-content">
+                <div class="col col-half s-width-full contact-info">
+                    <p><i class="ti-location-pin"></i>Chicago, US</p>
+                    <p><i class="ti-mobile"></i>Phone: <a href="tel: +00 151515" class="linkable">+00 151515</a></p>
+                    <p><i class="ti-email"></i>Email: <a href="mailto: mail@mail.com" class="linkable">mail@mail.com</a></p>
+                </div>
+                <form class="col col-half s-width-full s-mt-8 contact-form">
+                    <div class="row">
+                        <div class="col col-half s-width-full s-mt-8">
+                            <input type="text" class="form-control" placeholder="Name" required>
+                        </div>
+                        <div class="col col-half s-width-full s-mt-8">
+                            <input type="text" class="form-control" placeholder="Email" required>
+                        </div>
+                    </div>
+                    <div class="row mt-8">
+                        <div class="col col-full m-mt-8">
+                            <input type="text" class="form-control" placeholder="Message" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="s-width-full mt-16 mb-32 black-btn send-btn">Send</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="map-section">
+            <img src="/assets/img/map/map.jpg" alt="" srcset="">
+        </div>
+    </div>
+
+    <div id="footer" class="text-center text-grey">
+        <div class="social-networks">
+            <a href="" class="linkable"><i class="ti-facebook"></i></a>
+            <a href="" class="linkable"><i class="ti-instagram"></i></a>
+            <a href="" class="linkable"><i class="ti-linkedin"></i></a>
+            <a href="" class="linkable"><i class="ti-pinterest"></i></a>
+            <a href="" class="linkable"><i class="ti-twitter"></i></a>
+            <a href="" class="linkable"><i class="ti-youtube"></i></a>
+        </div>
+        <p class="copyright">Powered by <a href="#" class="text-grey linkable">w3.css</a></p>
+    </div>
+</body>
+</html>
